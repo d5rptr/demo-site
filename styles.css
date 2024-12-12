@@ -1,117 +1,148 @@
-/* General Styling */
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #f4f4f4;
-    line-height: 1.6;
 }
 
-/* Header */
-.main-header {
-    background: linear-gradient(135deg, #003366, #0073e6);
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 50px 20px;
     text-align: center;
+    padding: 20px;
 }
 
-.main-header h1 {
+.hero h1 {
     font-size: 2.5em;
     font-weight: 700;
-    margin: 0 0 10px;
-}
-
-.main-header p {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-/* Benefits Section */
-.benefits-section {
-    padding: 50px 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.benefits-section h2 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #003366;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.benefits-section p {
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 30px;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.benefit-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.benefit-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.benefit-item img {
-    width: 60px;
-    height: 60px;
     margin-bottom: 15px;
 }
 
-.benefit-item h3 {
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+/* Filters Section */
+.filters-section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters-container {
+    display: flex;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.filter-button:hover {
+    background-color: #005bb5;
+}
+
+/* Job Listings Section */
+.jobs-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cc-job-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.cc-job-title {
     font-size: 1.5em;
-    color: #0073e6;
+    font-weight: bold;
+    color: #003366;
+}
+
+.cc-job-location {
+    font-size: 1em;
+    color: #555;
     margin-bottom: 10px;
 }
 
-.benefit-item p {
+.cc-job-container button.cc-apply-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 1em;
-    color: #555;
+    cursor: pointer;
+    border: none;
 }
 
-/* Career Section */
-.career-section {
-    margin: 50px auto;
-    max-width: 1200px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.cc-job-container button.cc-apply-button:hover {
+    background-color: #005bb5;
 }
 
 /* Footer */
-.main-footer {
+.footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-.main-footer a {
-    color: #ffffff;
+.footer a {
+    color: white;
     text-decoration: none;
     margin: 0 10px;
-    font-weight: 500;
 }
 
-.main-footer a:hover {
+.footer a:hover {
     text-decoration: underline;
 }
