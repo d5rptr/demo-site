@@ -69,6 +69,34 @@ p {
     margin-bottom: 30px;
 }
 
+/* ClearCompany Widget Overrides */
+.cc-careers-container .cc-job-title {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold font style */
+    color: #003366; /* Dark blue for professional tone */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.cc-careers-container .cc-current-page, 
+.cc-careers-container .cc-page-control:hover {
+    color: #fff;
+    background: #47a76e;
+    border: 1px solid #47a76e;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.cc-careers-container .cc-job-container {
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Subtle divider between jobs */
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cc-careers-container .cc-job-container:hover {
+    background-color: #f9f9f9; /* Highlight on hover */
+}
+
 /* Content Sections */
 .content-section {
     padding: 50px 20px;
@@ -125,4 +153,8 @@ p {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
