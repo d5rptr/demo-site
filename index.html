@@ -8,62 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1>Careers at Orbis</h1>
-            <p>Join a team dedicated to innovation and mission success.</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Career at Orbis</h1>
+            <p>Join a team that solves the world's toughest challenges and empowers innovation.</p>
+            <a href="#jobs" class="cta-button">View Open Positions</a>
         </div>
     </header>
 
-    <main class="content">
-        <section id="benefits" class="benefits-section">
-            <h2>Join Orbis!</h2>
-            <p>At Orbis, we believe that our employees are the driving force behind our success. That’s why our benefits package is designed to attract and retain the best talent in the industry.</p>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="401k Icon">
-                    <h3>401k Savings Plan</h3>
-                    <p>Employer matching, with no vesting requirements, and a variety of low-cost saving options.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3159/3159020.png" alt="Paid Time Off Icon">
-                    <h3>Paid Time Off</h3>
-                    <p>Vacation, illness, personal time including paid maternity/paternity, bereavement, and jury duty.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3448/3448592.png" alt="Medical Icon">
-                    <h3>Medical, Dental & Vision</h3>
-                    <p>Comprehensive coverage starting on day one of employment, including dependent care (FSA).</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2302/2302837.png" alt="Learning Icon">
-                    <h3>Continuous Learning</h3>
-                    <p>Tuition reimbursement for relevant certifications and educational development.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1076/1076334.png" alt="Insurance Icon">
-                    <h3>Life & Disability Insurance</h3>
-                    <p>Life insurance, accidental death and dismemberment, short- and long-term disability, and supplemental policies.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331985.png" alt="Bonuses Icon">
-                    <h3>Annual Bonuses & Perks</h3>
-                    <p>Year-end discretionary bonus, achievement awards/bonuses, and company events.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="career-site-container" class="career-section">
-            <div id="career-site"></div>
-            <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=246a2adf-896b-41b9-8cef-8e9c09fae489"></script>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>© 2024 Orbis Operations. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <!-- Job Search Filters -->
+    <section id="filters" class="filters-section">
+        <div class="filters-container">
+            <input type="text" placeholder="Search by keyword" class="filter-input" id="keyword-filter">
+            <select class="filter-select" id="location-filter">
+                <option value="">All Locations</option>
+                <option value="Washington, DC">Washington, DC</option>
+                <option value="New York, NY">New York, NY</option>
+            </select>
+            <button class="filter-button">Search</button>
         </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="jobs" class="jobs-section">
+        <div id="career-site"></div>
+        <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=246a2adf-896b-41b9-8cef-8e9c09fae489"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Orbis Operations. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 </body>
 </html>
