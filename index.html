@@ -1,37 +1,105 @@
-/* Hero Section */
-.hero {
-    background: url('./images/office.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Orbis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Join Our Team at Orbis</h1>
+            <p>Discover exciting career opportunities and make an impact with us.</p>
+            <a href="#job-listings" class="cta-button">Explore Careers</a>
+        </div>
+    </header>
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
+    <!-- Job Search and Listings Section -->
+    <section id="job-listings" class="listings-section">
+        <h2>Find Your Next Career at Orbis</h2>
+        <div id="career-site"></div>
+        <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=246a2adf-896b-41b9-8cef-8e9c09fae489"></script>
+    </section>
 
-.hero p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+    <!-- Life at Orbis Section -->
+    <section id="life-at-orbis" class="content-section">
+        <h2>Life at Orbis</h2>
+        <p>We value our people and provide comprehensive benefits to support their growth and well-being.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/875/875681.png" alt="401k Icon">
+                <h3>401k Savings Plan</h3>
+                <p>Generous employer matching and low-cost options.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Time Off Icon">
+                <h3>Paid Time Off</h3>
+                <p>Vacation, sick leave, and paid parental leave.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/3771/3771518.png" alt="Medical Icon">
+                <h3>Medical Benefits</h3>
+                <p>Comprehensive health, dental, and vision coverage.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/4144/4144785.png" alt="Learning Icon">
+                <h3>Professional Growth</h3>
+                <p>Tuition reimbursement for certifications and education.</p>
+            </div>
+        </div>
+    </section>
 
-.cta-button {
-    padding: 12px 30px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #0073e6;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+    <!-- Our Values Section -->
+    <section id="values" class="content-section">
+        <h2>Our Values</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/3061/3061264.png" alt="Integrity Icon">
+                <h3>Integrity</h3>
+                <p>We act with honesty and uphold strong ethical principles.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Innovation Icon">
+                <h3>Innovation</h3>
+                <p>We thrive on creativity and solving complex challenges.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2583/2583201.png" alt="Excellence Icon">
+                <h3>Excellence</h3>
+                <p>We deliver outstanding results for our clients.</p>
+            </div>
+        </div>
+    </section>
 
-.cta-button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
+    <!-- Our Skills Section -->
+    <section id="skills" class="content-section">
+        <h2>Our Skills</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2910/2910217.png" alt="Cybersecurity Icon">
+                <h3>Cybersecurity</h3>
+                <p>Protecting systems with cutting-edge solutions.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Analytics Icon">
+                <h3>Data Analysis</h3>
+                <p>Transforming data into actionable intelligence.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Integration Icon">
+                <h3>System Integration</h3>
+                <p>Connecting systems to enhance efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Orbis Operations. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
