@@ -6,33 +6,66 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Widget Section */
-.widget-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #003366;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #003366, #0073e6);
     color: white;
-}
-
-.widget-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.widget-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Content Sections */
-.content-section {
-    padding: 50px 20px;
     text-align: center;
-    background-color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.cards, .values-grid, .skills-grid {
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: white;
+    color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Filters Section */
+.filters-section {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-input, .filter-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Grid Sections */
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -40,35 +73,22 @@ body {
     margin: 0 auto;
 }
 
-.card, .value-item, .skill-item {
-    padding: 20px;
-    background-color: #f9f9f9;
+.grid-item {
+    background: white;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card img, .value-item img, .skill-item img {
-    margin-bottom: 15px;
-    max-width: 100px;
-    height: auto;
-}
-
-.card h3, .value-item h3, .skill-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #0073e6;
-}
-
-/* Footer */
-.footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.footer a {
-    color: white;
-    text-decoration: none;
+.grid-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.2em;
+    color: #0073e6;
+    margin-bottom: 10px;
 }
