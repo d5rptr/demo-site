@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orbis Career Site</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Join Orbis</h1>
-        <p>Discover opportunities to make a difference with Orbis.</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Join Orbis</h1>
+            <p>Your career, your mission, our future. Together, we innovate.</p>
+            <a href="#career-site" class="cta-button">Explore Careers</a>
+        </div>
     </header>
 
     <main>
-        <!-- Career Site Widget -->
-        <div id="career-site"></div>
-        <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=246a2adf-896b-41b9-8cef-8e9c09fae489"></script>
+        <section id="career-site-container">
+            <!-- Career Site Widget -->
+            <div id="career-site"></div>
+            <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=246a2adf-896b-41b9-8cef-8e9c09fae489"></script>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Orbis Operations. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Orbis Operations. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
